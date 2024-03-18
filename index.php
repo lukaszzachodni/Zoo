@@ -16,7 +16,6 @@ use InvalidArgumentException;
 
 include_once 'autoload.php';
 
-
 $zoo = new Zoo();
 $arr = [
     'elephant' => (new Elephant('Ezekiel')),
@@ -34,19 +33,20 @@ foreach ($arr as $animal) {
         echo PHP_EOL;
     }
 
-
     try {
         $animal->eat((new Broccoli()));
     } catch (InvalidArgumentException $e) {
         echo $e->getMessage();
     }
     echo PHP_EOL;
+
     try {
         $animal->eat((new ChickenLeg()));
     } catch (InvalidArgumentException $e) {
         echo $e->getMessage();
     }
     echo PHP_EOL;
+
     $zoo->addAnimal($animal);
     echo PHP_EOL;
 }

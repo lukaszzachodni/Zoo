@@ -6,5 +6,4 @@ use Food\Interface\Meat;
 
 class ChickenLeg implements Meat
 {
-
 }

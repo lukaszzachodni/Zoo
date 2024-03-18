@@ -10,5 +10,4 @@ class Elephant extends Animal implements Herbivore
     {
         return 'Elephant';
     }
-
 }

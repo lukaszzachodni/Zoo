@@ -39,5 +39,4 @@ abstract class Animal
         }
         echo sprintf('%s is not hungry anymore!', $this);
     }
-
 }

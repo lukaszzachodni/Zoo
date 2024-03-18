@@ -8,5 +8,4 @@ namespace Animal\Interface;
  */
 interface AnimalInterface
 {
-
 }
